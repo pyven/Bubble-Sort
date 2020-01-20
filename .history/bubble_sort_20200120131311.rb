@@ -1,16 +1,16 @@
 def bubble_sort(arr)
   j = 0
-  limit = arr.length
 
-  arr.each do    
-    for i in (1...limit)
+  while ( j < limit  ) do
+    (1...(arr.length - j)).each do |i|
       if arr[i - 1] > arr[i]
         arr[i - 1], arr[i] = arr[i], arr[i - 1]
       end
     end
-
+    j++
     limit = arr.length - j
-  end
+  #end
+
   arr
 end
 

@@ -7,8 +7,9 @@ def bubble_sort(arr)
       if arr[i - 1] > arr[i]
         arr[i - 1], arr[i] = arr[i], arr[i - 1]
       end
+      p arr.inspect
     end
-
+    
     limit = arr.length - j
   end
   arr
