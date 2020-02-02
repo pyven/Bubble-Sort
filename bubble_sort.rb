@@ -3,12 +3,9 @@ def bubble_sort(arr)
   limit = arr.length
 
   arr.each do
-    for i in (1...limit)
-      if arr[i - 1] > arr[i]
-        arr[i - 1], arr[i] = arr[i], arr[i - 1]
-      end
+    (1...limit).each do |i|
+      arr[i - 1], arr[i] = arr[i], arr[i - 1] if arr[i - 1] > arr[i]
     end
-
     limit = arr.length - j
   end
   arr
@@ -19,18 +16,20 @@ def bubble_sort_by(arr)
   limit = arr.length
 
   arr.each do
-    for i in (1...limit)
-      sort = yield(arr[i-1], arr[i])
-      if sort.positive?
-        arr[i - 1], arr[i] = arr[i], arr[i - 1]
-      end
+    (1...limit).each do |i|
+      sort = yield(arr[i - 1], arr[i])
+      arr[i - 1], arr[i] = arr[i], arr[i - 1] if sort.positive?
     end
-
     limit = arr.length - j
   end
   arr
 end
 
-array = [5, 4 ,3, 2, 1]
+array = [5, 4, 3, 2, 1]
 p bubble_sort(array)
-p bubble_sort_by(["Homer", "Bart", "Lisa"]) {|left, right| left.length - right.length}
+
+the_simpson = %w[Homer Bart Lisa]
+p bubble_sort_by(the_simpson) { |right, left| left.length - right.length }
+
+sort = bubble_sort_by(the_simpson) { |left, right| left.length - right.length }
+p sort
