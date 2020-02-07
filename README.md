@@ -1,38 +1,15 @@
 # Bubble-Sort
-
-<!--
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
 [![Contributors][contributors-shield]][contributors-url]
 
-<br />
-<p align="center">
-  <a href="https://github.com//bubble-sort">
-    <img src="img/m.png" alt="microverse" width="70" height="70">
-  </a>
-
-  <h3 align="center">Bubble Sort algorithm</h3>
-
-  <p align="center">
-    This project is part of the
-    <a href="http://www.microverse.org">microverse</a> Ruby curriculum!
-    <br />
-    <a href="https://www.geeksforgeeks.org/bubble-sort/"><strong>Explore the algorithm [ geeksforgeeks ] »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/sebastianlujan/bubble-sort/issues">Report Bug</a>
+<div style="text-align: center;" >
+  <a href="https://www.microverse.org"><img src="img/m.png" alt="Microverse"></a>
+  <p>
+    <b>Bubble Sort algorithm</b></br>
+    <a href="https://www.geeksforgeeks.org/bubble-sort/"><b>The algorithm: GeeksforGeeks</b></a>
   </p>
-</p>
+</div>
 
-## Table of Contents
-
-* [About the Project](#about-the-project)
-  * [Built With](#built-with)
-* [Contact](#contact)
-* [Acknowledgements](#acknowledgements)
-
-<!-- ABOUT THE PROJECT -->
-## About The Project
+## About 
 
 This is the first project of the Microverse Ruby Section
 This is also the first Assignment of the Odin project curriculum https://www.theodinproject.com/courses/ruby-programming/lessons/advanced-building-blocks
@@ -53,23 +30,9 @@ Now create a similar method called #bubble_sort_by which sorts an array by accep
   => ["hi", "hey", "hello"]
 ```
 
-### Built With
-This project was built using these technologies.
-* Ruby
-* Rubocop
-* Visual Code
-
 ## Contact
 ### Sebastian Lujan - [@Sebastian Lujan](https://github.com/sebastianlujan) - glujan.recalde@gmail.com 
 ### Miguel Quimegson - [@Miguel Quimegson](https://github.com/pyven) - quimegson@gmail.com
 
-## Acknowledgements
-* [Microverse](https://www.microverse.org/)
-* [The Odin Project](https://www.theodinproject.com/)
-* [Ruby Documentation](https://www.ruby-lang.org/en/documentation/)
-
 [contributors-shield]: https://img.shields.io/github/contributors/sebastianlujan/Bubble-Sort?style=flat-square
 [contributors-url]: https://github.com/sebastianlujan/Bubble-Sort/
-
-
-
